@@ -90,10 +90,10 @@ Looking at above track information, the following will extract all of the tracks
 including the subtitle one.
 ```
 MUXOPT --no-pcr-on-video-pid --new-audio-pes --demux --vbr  --vbv-len=500
-V_MPEG4/ISO/MVC, "/home/nick/Packages/FRIM/x64/olesya1.MTS", insertSEI, contSPS, track=4114
-V_MPEG4/ISO/AVC, "/home/nick/Packages/FRIM/x64/olesya1.MTS", insertSEI, contSPS, track=4113
-A_AC3, "/home/nick/Packages/FRIM/x64/olesya1.MTS", track=4352
-S_HDMV/PGS, "/home/nick/Packages/FRIM/x64/olesya1.MTS", fps=25, track=4608
+V_MPEG4/ISO/MVC, "/home/nick/Packages/FRIM/x64/file.MTS", insertSEI, contSPS, track=4114
+V_MPEG4/ISO/AVC, "/home/nick/Packages/FRIM/x64/file.MTS", insertSEI, contSPS, track=4113
+A_AC3, "/home/nick/Packages/FRIM/x64/file.MTS", track=4352
+S_HDMV/PGS, "/home/nick/Packages/FRIM/x64/file.MTS", fps=25, track=4608
 ```
 Run `tsmuxer` specifying the output directory to extract each stream into its
 own file.
@@ -120,9 +120,9 @@ Demuxing time: 3 sec
 nick@polonius:/tmp/3d$ ls -l
 total 73356
 -rw-r--r-- 1 nick nick      394 Jun  5 17:41 demux.meta
--rw-r----- 1 nick nick 37141757 Jun  5 17:43 olesya1.track_4113.264
--rw-r----- 1 nick nick 36998546 Jun  5 17:43 olesya1.track_4114.mvc
--rw-r----- 1 nick nick   798720 Jun  5 17:43 olesya1.track_4352.ac3
--rw-r----- 1 nick nick   162552 Jun  5 17:43 olesya1.track_4608.sup
+-rw-r----- 1 nick nick 37141757 Jun  5 17:43 file.track_4113.264
+-rw-r----- 1 nick nick 36998546 Jun  5 17:43 file.track_4114.mvc
+-rw-r----- 1 nick nick   798720 Jun  5 17:43 file.track_4352.ac3
+-rw-r----- 1 nick nick   162552 Jun  5 17:43 file.track_4608.sup
 ```
 
