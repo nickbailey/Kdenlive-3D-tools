@@ -90,10 +90,10 @@ Looking at above track information, the following will extract all of the tracks
 including the subtitle one.
 ```
 MUXOPT --no-pcr-on-video-pid --new-audio-pes --demux --vbr  --vbv-len=500
-V_MPEG4/ISO/MVC, "/home/nick/Packages/FRIM/x64/file.MTS", insertSEI, contSPS, track=4114
-V_MPEG4/ISO/AVC, "/home/nick/Packages/FRIM/x64/file.MTS", insertSEI, contSPS, track=4113
-A_AC3, "/home/nick/Packages/FRIM/x64/file.MTS", track=4352
-S_HDMV/PGS, "/home/nick/Packages/FRIM/x64/file.MTS", fps=25, track=4608
+V_MPEG4/ISO/MVC, "/path/to/file.MTS", insertSEI, contSPS, track=4114
+V_MPEG4/ISO/AVC, "/path/to/file.MTS", insertSEI, contSPS, track=4113
+A_AC3, "/path/to/file.MTS", track=4352
+S_HDMV/PGS, "/path/to/file.MTS", fps=25, track=4608
 ```
 Run `tsmuxer` specifying the output directory to extract each stream into its
 own file.
